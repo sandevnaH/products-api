@@ -23,3 +23,9 @@ public class Product {
         return price;
     }
 }
+
+/*Jackson only includes a field if there is a matching
+public getter. I removed getName(), so Jackson has
+no way to read name, and it skips that field. The other
+two still have getters, so they stay.
+ */
